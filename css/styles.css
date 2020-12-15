@@ -585,6 +585,47 @@ img {
   background-color: var(--accent-color);
 }
 
+.subscribe-container {
+  display: flex;
+  margin-left: 93px;
+  align-items: flex-end;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field {
+  width: 354px;
+  height: 50px;
+  background-color: var(--secondary-bg-color);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.subscribe-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe-button-text {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  margin-right: 10px;
+}
+
+.subscribe-form input::placeholder {
+  padding: 15px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
 /*--------------------Portfolio-------------------*/
 
 .buttons-section {
