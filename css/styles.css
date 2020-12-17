@@ -603,7 +603,7 @@ textarea {
   display: inline-flex;
 }
 
-.form-field {
+.subscribe-form-field {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -840,8 +840,12 @@ textarea {
 }
 /*---------------------------------------------------------------------*/
 
-.modal-form {
+.modal-formm {
   padding: 40px;
+}
+
+.form-field {
+  margin-bottom: 4px;
 }
 
 .subscribe-mod-title {
@@ -860,8 +864,12 @@ textarea {
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
-  margin-bottom: 4px;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
+}
+
+.form-field {
+  margin-bottom: 10px;
 }
 
 .mod-form-field {
@@ -869,21 +877,31 @@ textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 10px;
 }
 
 .comment-field {
+  margin-bottom: 30px;
+}
+
+.mod-comment-field {
   width: 445px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  margin-bottom: 25px;
 }
 
-.textarea input::placeholder {
-  padding: 15px;
+.mod-checkbox-field {
+  margin-bottom: 25px;
+  margin-left: 12px;
+}
 
-  color: rgba(255, 255, 255, 0.6);
+.comment-field textarea::placeholder {
+  padding: 15px;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.01em;
+
+  color: rgba(117, 117, 117, 0.5);
 }
 
 .policy-text {
@@ -894,11 +912,6 @@ textarea {
 
 .policy-link {
   color: var(--accent-color);
-}
-
-.checkbox-field {
-  margin-left: 12px;
-  margin-bottom: 30px;
 }
 
 .mod-button {
