@@ -882,7 +882,7 @@ textarea {
   margin-bottom: 10px;
 }
 
-.mod-form-field {
+.mod-form-input {
   width: 445px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -922,6 +922,7 @@ textarea {
 
 .policy-link {
   color: var(--accent-color);
+  text-decoration-skip-ink: none;
 }
 
 .mod-button {
@@ -949,13 +950,21 @@ textarea {
   margin-right: auto;
 }
 
-.form-icon {
-  position: absolute;
+.form-field {
+  position: relative;
 }
 
-.mod-form-field:focus {
-  border: 1px solid var(--accent-color);
+.form-icon {
+  position: absolute;
+  left: 15px;
+  bottom: 14px;
 }
-.mod-form-field:focus + .form-icon {
+
+.mod-form-input:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
+.mod-form-input:focus + .form-icon {
   fill: var(--accent-color);
 }

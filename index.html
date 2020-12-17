@@ -472,7 +472,7 @@
                 <input type="email" class="subscribe-form-field" name="mail" placeholder="E-mail"/>
                         
             
-                <button type="button" class="subscribe-button">
+                <button type="submit" class="subscribe-button">
                     <span class="subscribe-button-text">Подписаться</span>
                     <svg width="24" height="24">
                         <use href="./images/sprites.svg#telegram">
@@ -503,23 +503,31 @@
                     <p> <span class="subscribe-mod-title">Оставьте свои данные, мы вам перезвоним</span></p>
                     
                     <div class="form-field">
-                    <label class="mod-label" for="name">Имя</label>
-                    <svg class="form-icon" width="12" height="12">
-                        <use href="./images/sprites.svg#modname">
-                    </svg>
-                    <input type="text" class="mod-form-field" name="name" id="name" />
-                   
-                    
+                        <label class="mod-label" for="name">Имя</label>
+                        <input type="text" class="mod-form-input" name="name" id="name" />
+                        <svg class="form-icon" width="12" height="12">
+                            <use href="./images/sprites.svg#modname">
+                        </svg>
                     </div>
+
+
+
+
 
                     <div class="form-field">
                     <label class="mod-label" for="tel">Телефон</label>
-                    <input type="tel" class="mod-form-field" name="tel" id="tel" />
+                    <input type="tel" class="mod-form-input" name="tel" id="tel" />
+                    <svg class="form-icon" width="13" height="13">
+                        <use href="./images/sprites.svg#modtel">
+                    </svg>
                     </div>
 
                     <div class="form-field">
                     <label class="mod-label" for="mail">Почта</label>
-                    <input type="email" class="mod-form-field" name="mail" id="mail" />
+                    <input type="email" class="mod-form-input" name="mail" id="mail" />
+                    <svg class="form-icon" width="15" height="12">
+                        <use href="./images/sprites.svg#modmail">
+                    </svg>
                     </div>
 
                     <div class="comment-field">
@@ -539,7 +547,7 @@
                         <a class="policy-link" href="/" target="blank">Условия договора</a></label>
                         </div>
                       
-                        <button type="button" class="mod-button" data-modal-open>
+                        <button type="submit" class="mod-button" data-modal-open>
                             <span class="mod-button-text">Отправить</span>
                         </button>
                         
