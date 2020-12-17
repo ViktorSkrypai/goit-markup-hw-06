@@ -467,23 +467,19 @@
 <!---------------------------------------------------------------------------------------->
         <div class="subscribe-container">
         
-            <div class="subscribe-form">
                 <p class="join-us">Подпишитесь на рассылку</p>
-                <form>
+                <form class="subscribe-form">
                 <input type="email" class="form-field" name="mail" placeholder="E-mail"/>
-                </form>
-            </div>
-        
-        
-            <div class="subscribe-button">
-                <button type="button" class="button">
+                        
+            
+                <button type="button" class="subscribe-button">
                     <span class="subscribe-button-text">Подписаться</span>
                     <svg width="24" height="24">
                         <use href="./images/sprites.svg#telegram">
                     </svg>
                 </button>
-                </div>
-
+            
+                
 
         </div>
 <!---------------------------------------------------------------------------------------->
@@ -499,11 +495,11 @@
                     <use href="./images/sprites.svg#close">
                 </svg>
             </button>
-            <div class="form-container">
-                <p> <span class="subscribe-mod-title">Оставьте свои данные, мы вам перезвоним</span></p>
+
             
-            
-                <form>
+                                   
+                <form class="modal-form">
+                    <p> <span class="subscribe-mod-title">Оставьте свои данные, мы вам перезвоним</span></p>
                     <label class="mod-label" for="name">Имя</label>
                     <input type="text" class="mod-form-field" name="name" id="name" />
 
@@ -514,7 +510,20 @@
                     <input type="email" class="mod-form-field" name="mail" id="mail" />
 
                     <label class="mod-label" for="name">Комментарий</label>
-                    <textarea class="comment-field" value="comment" name="comment" placeholder="Введите текст"> </textarea>
+                    <textarea 
+                    class="comment-field"
+                    name="comment"
+                    value="comment"
+                    id="comment" 
+                    placeholder="Введите текст"></textarea>
+
+                    <input type="checkbox" class="checkbox-field" name="policy" id="policy" />
+                    <label class="policy-text" for="policy">Соглашаюсь с рассылкой и принимаю 
+                        <a class="policy-link" href="/" target="blank">Условия договора</a></label>
+                      
+                        <button type="button" class="mod-button" data-modal-open>
+                            <span class="mod-button-text">Отправить</span>
+                        </button>
                 </form>
             
             

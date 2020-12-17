@@ -594,19 +594,17 @@ textarea {
 }
 /*-------------------------------------------------------------*/
 .subscribe-container {
-  display: flex;
   margin-left: 90px;
-  align-items: flex-end;
 }
 
 .subscribe-container button {
-  display: flex;
   justify-content: center;
   align-items: center;
+  display: inline-flex;
 }
 
 .form-field {
-  width: 356px;
+  width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -623,7 +621,15 @@ textarea {
 }
 
 .subscribe-button {
+  display: inline-block;
+  padding: 10px 28px;
+  min-width: 200px;
   margin-left: 12px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
 }
 
 .subscribe-form input::placeholder {
@@ -782,8 +788,7 @@ textarea {
   position: absolute;
 
   width: 528px;
-  height: 581px;
-  padding: 8px;
+
   left: 50%;
   top: 50%;
 
@@ -835,15 +840,13 @@ textarea {
 }
 /*---------------------------------------------------------------------*/
 
-.form-container {
-  padding: 35px;
+.modal-form {
+  padding: 40px;
 }
 
 .subscribe-mod-title {
   display: block;
-  color: #212121;
-  font-family: Roboto;
-  font-style: normal;
+  color: var(--title-text-color);
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
@@ -854,14 +857,11 @@ textarea {
 
 .mod-label {
   display: block;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
   margin-bottom: 4px;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .mod-form-field {
@@ -876,6 +876,52 @@ textarea {
   width: 445px;
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
-
   border-radius: 4px;
+  margin-bottom: 25px;
+}
+
+.textarea input::placeholder {
+  padding: 15px;
+
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.policy-text {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.policy-link {
+  color: var(--accent-color);
+}
+
+.checkbox-field {
+  margin-left: 12px;
+  margin-bottom: 30px;
+}
+
+.mod-button {
+  display: flex;
+  padding: 10px 32px;
+  min-width: 200px;
+  cursor: pointer;
+  background-color: var(--accent-color);
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.mod-button-text {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
