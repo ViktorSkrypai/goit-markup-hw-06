@@ -1002,7 +1002,6 @@ textarea {
   background-image: url(../images/svg/galka.svg);
   background-size: contain;
   background-origin: border-box;
-  background-repeat: no-repeat;
 
   transition: border-color 250ms var(--timing-function),
     background-color 250ms var(--timing-function);
