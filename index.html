@@ -482,7 +482,7 @@
                 
 
         </div>
-<!---------------------------------------------------------------------------------------->
+
         
         </div>
     </footer>
@@ -496,10 +496,9 @@
                 </svg>
             </button>
 
-            <div class="modal-formm">
+            <div class="modal-form">
                                    
-                <form class="modal-form">
-
+                <form>
                     <p> <span class="subscribe-mod-title">Оставьте свои данные, мы вам перезвоним</span></p>
                     
                     <div class="form-field">
@@ -509,11 +508,6 @@
                             <use href="./images/sprites.svg#modname">
                         </svg>
                     </div>
-
-
-
-
-
                     <div class="form-field">
                     <label class="mod-label" for="tel">Телефон</label>
                     <input type="tel" class="mod-form-input" name="tel" id="tel" />
@@ -521,7 +515,6 @@
                         <use href="./images/sprites.svg#modtel">
                     </svg>
                     </div>
-
                     <div class="form-field">
                     <label class="mod-label" for="mail">Почта</label>
                     <input type="email" class="mod-form-input" name="mail" id="mail" />
@@ -529,9 +522,8 @@
                         <use href="./images/sprites.svg#modmail">
                     </svg>
                     </div>
-
                     <div class="comment-field">
-                    <label class="mod-label" for="name">Комментарий</label>
+                    <label class="mod-label" for="comment">Комментарий</label>
                     <textarea 
                     class="mod-comment-field"
                     name="comment"
@@ -540,12 +532,30 @@
                     placeholder="Введите текст"></textarea>
                     </div>
 
+
+
+
                     
-                    <div class="mod-checkbox-field">
-                    <input type="checkbox" class="checkbox-field" name="policy" id="policy" />
-                    <label class="policy-text" for="policy">Соглашаюсь с рассылкой и принимаю 
-                        <a class="policy-link" href="/" target="blank">Условия договора</a></label>
-                        </div>
+           <div class="mod-checkbox-field">
+
+            
+
+            <label class="policy-text" for="policy">
+            
+               <input type="checkbox" class="checkbox-field" name="policy" id="policy"/>
+                <svg class="checkbox-icon" width="16" height="16">
+                    <use href="./images/sprites.svg#modcheck">
+                </svg>
+                Соглашаюсь с рассылкой и принимаю
+                <a class="policy-link" href="/" target="blank">Условия договора</a>
+                 
+                 </label>
+           </div>
+
+
+
+
+
                       
                         <button type="submit" class="mod-button" data-modal-open>
                             <span class="mod-button-text">Отправить</span>
@@ -554,6 +564,8 @@
                 </form>
 
                 </div>
+
+                
             
             
             

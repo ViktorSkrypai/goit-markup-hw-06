@@ -850,12 +850,9 @@ textarea {
 }
 /*---------------------------------------------------------------------*/
 
-.modal-formm {
+.modal-form {
   padding: 40px;
-}
-
-.form-field {
-  margin-bottom: 4px;
+  display: block;
 }
 
 .subscribe-mod-title {
@@ -879,7 +876,9 @@ textarea {
 }
 
 .form-field {
+  margin-bottom: 4px;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .mod-form-input {
@@ -902,29 +901,12 @@ textarea {
   padding: 12px 16px;
 }
 
-.mod-checkbox-field {
-  margin-bottom: 25px;
-  margin-left: 12px;
-}
-
 .comment-field textarea::placeholder {
-  /*padding: 15px;*/
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
 
   color: rgba(117, 117, 117, 0.5);
-}
-
-.policy-text {
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-}
-
-.policy-link {
-  color: var(--accent-color);
-  text-decoration-skip-ink: none;
 }
 
 .mod-button {
@@ -952,10 +934,6 @@ textarea {
   margin-right: auto;
 }
 
-.form-field {
-  position: relative;
-}
-
 .form-icon {
   position: absolute;
   left: 15px;
@@ -974,4 +952,41 @@ textarea {
 .mod-comment-field:focus {
   outline: none;
   border: 1px solid #2196f3;
+}
+
+.policy-text {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.policy-link {
+  color: var(--accent-color);
+  text-decoration-skip-ink: none;
+  margin-left: 5px;
+}
+
+.mod-checkbox-field {
+  margin-bottom: 25px;
+  margin-left: 12px;
+}
+
+.checkbox-field {
+  appearance: none;
+  position: absolute;
+}
+
+.checkbox-field:checked + .checkbox-icon {
+  fill: var(--accent-color);
+  background-color: var(--accent-color);
+  background-image: url(../images/svg/galka.svg);
+  background-size: contain;
+  border-radius: 2px;
+}
+
+.checkbox-icon {
+  margin-right: 7px;
 }
