@@ -887,6 +887,7 @@ textarea {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 42px;
 }
 
 .comment-field {
@@ -898,6 +899,7 @@ textarea {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  padding: 12px 16px;
 }
 
 .mod-checkbox-field {
@@ -906,7 +908,7 @@ textarea {
 }
 
 .comment-field textarea::placeholder {
-  padding: 15px;
+  /*padding: 15px;*/
   font-size: 12px;
   line-height: 14px;
   letter-spacing: 0.01em;
@@ -967,4 +969,9 @@ textarea {
 
 .mod-form-input:focus + .form-icon {
   fill: var(--accent-color);
+}
+
+.mod-comment-field:focus {
+  outline: none;
+  border: 1px solid #2196f3;
 }
