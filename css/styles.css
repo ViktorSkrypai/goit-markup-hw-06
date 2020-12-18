@@ -887,10 +887,11 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 42px;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .comment-field {
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .mod-comment-field {
@@ -899,6 +900,7 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding: 12px 16px;
+  transition: border-color 250ms var(--timing-function);
 }
 
 .comment-field textarea::placeholder {
@@ -938,6 +940,7 @@ textarea {
   position: absolute;
   left: 15px;
   bottom: 14px;
+  transition: fill 250ms var(--timing-function);
 }
 
 .mod-form-input:focus {
@@ -954,8 +957,8 @@ textarea {
   border: 1px solid #2196f3;
 }
 
-.policy-text {
-  display: inline-flex;
+.policy-label {
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 14px;
@@ -969,6 +972,10 @@ textarea {
   margin-left: 5px;
 }
 
+.checkbox-icon {
+  margin-right: 7px;
+}
+
 .mod-checkbox-field {
   margin-bottom: 25px;
   margin-left: 12px;
@@ -977,16 +984,26 @@ textarea {
 .checkbox-field {
   appearance: none;
   position: absolute;
+  transition: border-color 250ms var(--timing-function);
 }
 
-.checkbox-field:checked + .checkbox-icon {
-  fill: var(--accent-color);
+.checkbox-border {
+  border: 2px solid #212121;
+  border-radius: 2px;
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  transition: border-color 250ms var(--timing-function);
+}
+
+.checkbox-field:checked + .checkbox-border {
   background-color: var(--accent-color);
+  border-color: var(--accent-color);
   background-image: url(../images/svg/galka.svg);
   background-size: contain;
-  border-radius: 2px;
-}
+  background-origin: border-box;
+  background-repeat: no-repeat;
 
-.checkbox-icon {
-  margin-right: 7px;
+  transition: border-color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
