@@ -597,6 +597,10 @@ textarea {
   margin-left: 90px;
 }
 
+.subscribe-form {
+  display: flex;
+}
+
 .subscribe-container button {
   justify-content: center;
   align-items: center;
